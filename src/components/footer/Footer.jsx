@@ -37,7 +37,7 @@ export default function Footer() {
                 {/* Social Media Icons */}
                 <div className="flex justify-center mt-4 md:mt-0 space-x-6">
                     <a
-                        href="www.linkedin.com/in/mahesh-pagrut-🎮-887535274"
+                        href="https://www.linkedin.com/in/mahesh-pagrut-%F0%9F%8E%AE-887535274/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-blue-400 transition-transform duration-300"
