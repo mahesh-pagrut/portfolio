@@ -37,7 +37,7 @@ export default function Footer() {
                 {/* Social Media Icons */}
                 <div className="flex justify-center mt-4 md:mt-0 space-x-6">
                     <a
-                        href="https://www.linkedin.com/in/your-linkedin"
+                        href="www.linkedin.com/in/mahesh-pagrut-🎮-887535274"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-blue-400 transition-transform duration-300"
@@ -46,7 +46,7 @@ export default function Footer() {
                         <FaLinkedin className="hover:scale-125" />
                     </a>
                     <a
-                        href="https://github.com/your-github"
+                        href="https://github.com/mahesh-pagrut"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-gray-300 transition-transform duration-300"
