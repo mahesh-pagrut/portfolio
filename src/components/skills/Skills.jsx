@@ -52,7 +52,7 @@ export default function Skills() {
             Other Technologies
           </h5>
           <div data-aos='fade-right'data-aos-delay='500' className='flex flex-wrap mb-8 text-gray-300'>
-            <p>VS Code | Netlify | Github</p>
+            <p>VS Code | Netlify | Github | Vercel</p>
           </div>
         </div>
 

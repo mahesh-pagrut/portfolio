@@ -28,8 +28,8 @@ export default function Projects() {
     {
       id: 3,
       image: image3,
-      title: "Project 3",
-      description: "Photo description for project",
+      title: "NutriPro: Your Ultimate Nutrition Companion",
+      description: "NutriPro offers an AI Nutritionist, a Nutrition Calculator, recipe QR codes, and the Gemini AI tool to analyze food images for instant nutritional insights. Create, update, and personalize recipes effortlessly. Your all-in-one platform for healthy eating and wellness.",
       liveLink: "https://mavericks-cv.netlify.app/",
     },
     {
