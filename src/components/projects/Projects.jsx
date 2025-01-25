@@ -28,7 +28,7 @@ export default function Projects() {
     {
       id: 3,
       image: image3,
-      title: "NutriPro: Nutrition Companion",
+      title: "NutriPro: 48 Hour Hackathon",
       description: "NutriPro offers an AI Nutritionist, a Nutrition Calculator, recipe QR codes, and the Gemini AI tool to analyze food images for instant nutritional insights. Create, update, and personalize recipes effortlessly. Your all-in-one platform for healthy eating and wellness.",
       liveLink: "pronutritions.netlify.app/",
     },
