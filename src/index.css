@@ -5,3 +5,16 @@
 html {
     scroll-behavior: smooth;
 }
+
+.material-btn {
+    @apply border-2 px-6 py-2 rounded-full text-lg font-medium transition-all duration-300 ease-in-out;
+  
+    /* Additional hover effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .material-btn:hover {
+    color: white; /* Changes text to white on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Elevates shadow */
+  }
+  

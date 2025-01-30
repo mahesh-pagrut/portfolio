@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import image from "../../assets/image.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
 
 export default function Projects() {
+  const [showFullDescription, setShowFullDescription] = useState({});
+
+  const toggleDescription = (id) => {
+    setShowFullDescription((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+
   const listProjects = [
     {
       id: 1,
@@ -16,6 +26,7 @@ export default function Projects() {
       description:
         "MavericksCV is a React-based single-page application tagged as the ultimate resume builder. It uses the Harvard letter format to create CVs and is designed to be user-friendly and efficient.",
       liveLink: "https://mavericks-cv.netlify.app/",
+      githubLink: "https://github.com/mahesh-pagrut/Resume_Builder",
     },
     {
       id: 2,
@@ -24,13 +35,16 @@ export default function Projects() {
       description:
         "The Recipes App is a responsive web application built with Next.js, TypeScript, and Tailwind CSS. It features server-side rendering for optimized performance, a mobile-first design for seamless usability, dynamic routing for fast content loading, and detailed recipe pages for an enriched user experience.",
       liveLink: "https://recipes-app-beige-alpha.vercel.app",
+      githubLink: "https://github.com/mahesh-pagrut/Recipes-App",
     },
     {
       id: 3,
       image: image3,
       title: "NutriPro: 48 Hour Hackathon",
-      description: "NutriPro offers an AI Nutritionist, a Nutrition Calculator, recipe QR codes, and the Gemini AI tool to analyze food images for instant nutritional insights. Create, update, and personalize recipes effortlessly. Your all-in-one platform for healthy eating and wellness.",
+      description:
+        "NutriPro offers an AI Nutritionist, a Nutrition Calculator, recipe QR codes, and the Gemini AI tool to analyze food images for instant nutritional insights. Create, update, and personalize recipes effortlessly. Your all-in-one platform for healthy eating and wellness.",
       liveLink: "https://pronutritions.netlify.app/",
+      githubLink: "https://github.com/mahesh-pagrut/6395-hackathon",
     },
     {
       id: 4,
@@ -38,6 +52,7 @@ export default function Projects() {
       title: "Project 4",
       description: "Photo description for project",
       liveLink: "https://mavericks-cv.netlify.app/",
+      githubLink: "https://github.com/example/project-4",
     },
   ];
 
@@ -83,17 +98,45 @@ export default function Projects() {
                   <h2 className="tracking-widest text-xl title-font font-medium text-gray-400 mb-1">
                     {project.title}
                   </h2>
-                  <p className="leading-relaxed mb-3">{project.description}</p>
+                  <p
+                    className={`leading-relaxed mb-3 ${
+                      showFullDescription[project.id]
+                        ? "line-clamp-none"
+                        : "line-clamp-4"
+                    }`}
+                  >
+                    {project.description}
+                  </p>
+                  <button
+                    onClick={() => toggleDescription(project.id)}
+                    className="text-orange-500 font-semibold underline"
+                  >
+                    {showFullDescription[project.id]
+                      ? "Read Less"
+                      : "Read More"}
+                  </button>
                 </div>
-                {/* Live Button */}
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute bottom-3 right-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm py-1 px-3 rounded-full shadow-lg transition-all duration-300"
-                >
-                  Live
-                </a>
+                {/* Buttons */}
+                <div className="absolute bottom-3 right-3 flex gap-2">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 hover:bg-gray-900 text-white font-semibold text-sm py-1 px-3 rounded-full shadow-lg flex items-center gap-2 transition-all duration-300"
+                  >
+                    <FaGithub />
+                    GitHub
+                  </a>
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 hover:bg-gray-900 text-white font-semibold text-sm py-1 px-3 rounded-full shadow-lg flex items-center gap-2 transition-all duration-300"
+                  >
+                    <FaExternalLinkAlt />
+                    Live
+                  </a>
+                </div>
               </div>
             </div>
           ))}

@@ -1,14 +1,12 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
 import hi from "../../assets/hi.png";
 import CV from "./CV.pdf";
 import myNew1 from "../../assets/myNew1.png";
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col">
-      <div className="h-[960px] w-[880px] md:h-[720px] md:w-[640px] absolute right-0 bg-gradient-to-r from-orange-500 via-yellow-300 to-purple-500 rounded-full transform rotate-12 -top-20 shadow-[0_10px_20px_rgb(255,140,0,0.4),_0_-10px_20px_rgb(255,69,0,0.4),_5px_15px_25px_rgb(0,0,255,0.3)] p-8 bg-gray-900 text-white " />
-      <Navbar />
+    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col pt-16">
+      <div className="h-[960px] w-[880px] md:h-[720px] md:w-[640px] absolute right-0 bg-gradient-to-r from-orange-500 via-yellow-300 to-purple-600 rounded-full transform rotate-12 -top-20 shadow-[0_10px_20px_rgb(255,140,0,0.4),_0_-10px_20px_rgb(255,69,0,0.4),_5px_15px_25px_rgb(0,0,255,0.3)] p-8 bg-gray-900 text-white " />
       <section
         data-aos="fade-up"
         data-aos-delay="250"
@@ -20,7 +18,7 @@ export default function Hero() {
               src={hi}
               data-aos="fade-up"
               data-aos-delay="400"
-              className="absolute top-[350px] left-72 md:top-[-30px] md:left-[450]px transform-translate-x-1/2 -translate-y-1/2 w-20 h-20"
+              className="absolute top-[350px] left-72 md:top-[-30px] md:left-[450px] transform-translate-x-1/2 -translate-y-1/2 w-20 h-20"
             />
             <h1 className="title-font sm:text-4xl mb-4 font-bold text-white">
               Hi! I'm MAHESH
@@ -35,10 +33,17 @@ export default function Hero() {
               solutions. My journey is fueled by curiosity, creativity, and the
               drive to build impactful web applications.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-4">
+              {/* Button to download the CV */}
               <a href={CV} download>
-                <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-lg">
+                <button className="material-btn border-purple-500 text-purple-500 hover:bg-purple-500">
                   Download CV
+                </button>
+              </a>
+              {/* Button to open the CV in a new tab */}
+              <a href={CV} target="_blank" rel="noopener noreferrer">
+                <button className="material-btn border-orange-500 text-orange-500 hover:bg-orange-500">
+                  View CV
                 </button>
               </a>
             </div>
