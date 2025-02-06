@@ -4,6 +4,17 @@ import CV from "./Mahesh_Resume.pdf";
 import myNew1 from "../../assets/myNew1.png";
 
 export default function Hero() {
+  const handleClick = () => {
+    // Open the CV in a new tab
+    window.open(CV, "_blank");
+
+    // Trigger the download
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "Mahesh_Resume.pdf";
+    link.click();
+  };
+
   return (
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col pt-16">
       <div className="h-[960px] w-[880px] md:h-[720px] md:w-[640px] absolute right-0 bg-gradient-to-r from-orange-500 via-yellow-300 to-purple-600 rounded-full transform rotate-12 -top-20 shadow-[0_10px_20px_rgb(255,140,0,0.4),_0_-10px_20px_rgb(255,69,0,0.4),_5px_15px_25px_rgb(0,0,255,0.3)] p-8 bg-gray-900 text-white " />
@@ -34,18 +45,13 @@ export default function Hero() {
               drive to build impactful web applications.
             </p>
             <div className="flex justify-center gap-4">
-              {/* Button to download the CV */}
-              <a href={CV} download>
-                <button className="material-btn border-purple-500 text-purple-500 hover:bg-purple-500">
-                  Download CV
-                </button>
-              </a>
-              {/* Button to open the CV in a new tab */}
-              <a href={CV} target="_blank" rel="noopener noreferrer">
-                <button className="material-btn border-orange-500 text-orange-500 hover:bg-orange-500">
-                  View CV
-                </button>
-              </a>
+              {/* Single button to handle both actions */}
+              <button
+                onClick={handleClick}
+                className="material-btn border-orange-500 text-orange-500 hover:bg-orange-500"
+              >
+                View & Download CV
+              </button>
             </div>
           </div>
           <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
