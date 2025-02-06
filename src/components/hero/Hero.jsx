@@ -1,6 +1,6 @@
 import React from "react";
 import hi from "../../assets/hi.png";
-import CV from "./CV.pdf";
+import CV from "./Mahesh_Resume.pdf";
 import myNew1 from "../../assets/myNew1.png";
 
 export default function Hero() {
@@ -52,7 +52,7 @@ export default function Hero() {
             <img
               src={myNew1}
               alt="hero"
-              className="object-cover object-center rounded-md w-70 h-80 shadow-[0_0_40px_rgba(25,25,20,0.5)] "
+              className="object-cover object-center rounded-full w-70 h-80 shadow-[0_0_40px_rgba(25,25,20,0.5)] "
             />
           </div>
         </div>

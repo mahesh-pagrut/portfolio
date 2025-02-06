@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Navbar() {
   const listNavbar = [
-    { name: "Home", link: "#hero" },
+    { name: "Home", link: "/" },
     { name: "Skills", link: "#skills" },
     // { name: "Experience", link: "#experience" },
     { name: "Language", link: "#language" },

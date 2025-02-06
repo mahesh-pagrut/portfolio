@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaUser, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
@@ -23,14 +24,14 @@ export default function Contact() {
 
     emailjs
       .send(
-        'service_qh0dv5x', // Replace with your EmailJS Service ID
-        'template_4g70tug', // Replace with your EmailJS Template ID
+        'service_qh0dv5x',
+        'template_4g70tug',
         {
           user_name: formData.name,
           user_email: formData.email,
           user_message: formData.message,
         },
-        'dj737N1Zv4dTUB2rQ' // Replace with your EmailJS Public Key
+        'dj737N1Zv4dTUB2rQ'
       )
       .then(
         () => {
@@ -45,75 +46,75 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" data-aos="fade-up" data-aos-delay="400">
-      <div className="py-8 lg:py-16 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
-          Contact Me
-        </h2>
-        <form onSubmit={handleSubmit} className="space-y-8">
-          <div>
-            <label
-              htmlFor="name"
-              className="block mb-2 text-xl font-medium text-white"
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="shadow-sm bg-gray-300 font-bold border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="Your Name"
-              required
-            />
+    <section id="contact" className="py-8 lg:py-16 mx-auto max-w-screen-lg" data-aos="fade-up" data-aos-delay="400">
+      <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* Contact Info Card */}
+        <div className="bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-2xl shadow-lg flex flex-col items-start space-y-4">
+          <div className="flex items-center space-x-4 text-white">
+            <FaUser className="text-orange-400 text-2xl" />
+            <span className="text-lg font-semibold">Mahesh Dinkar Pagrut</span>
           </div>
-          <div>
-            <label
-              htmlFor="email"
-              className="block mb-2 text-xl font-medium text-white"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="shadow-sm bg-gray-300 font-bold border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="Your Email"
-              required
-            />
+          <div className="flex items-center space-x-4 text-white">
+            <FaPhone className="text-orange-400 text-2xl" />
+            <span className="text-lg font-semibold">8999288980</span>
           </div>
-          <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="block mb-2 text-xl font-medium text-white"
-            >
-              Message
-            </label>
-            <textarea
-              rows="6"
-              id="message"
-              value={formData.message}
-              onChange={handleChange}
-              className="shadow-sm bg-gray-300 font-bold border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="Your Message"
-              required
-            />
+          <div className="flex items-center space-x-4 text-white">
+            <FaEnvelope className="text-orange-400 text-2xl" />
+            <span className="text-lg font-semibold">maheshdpmayshu@gmail.com</span>
           </div>
-          <button
-            type="submit"
-            className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] rounded-full text-lg"
-          >
-            Send Message
-          </button>
-        </form>
-        {status && (
-          <p className="mt-4 text-center text-lg font-semibold text-white">
-            {status}
-          </p>
-        )}
+          <div className="flex items-center space-x-4 text-white">
+            <FaMapMarkerAlt className="text-orange-400 text-2xl" />
+            <span className="text-lg font-semibold">Akola, Maharashtra, India</span>
+          </div>
+        </div>
+
+        {/* Contact Form */}
+        <div>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+             
+              <input
+                type="text"
+                id="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full p-2.5 bg-gray-300 text-gray-900 rounded-lg focus:ring-orange-500 focus:border-orange-500"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full p-2.5 bg-gray-300 text-gray-900 rounded-lg focus:ring-orange-500 focus:border-orange-500"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                rows="2"
+                id="message"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full p-2.5 bg-gray-300 text-gray-900 rounded-lg focus:ring-orange-500 focus:border-orange-500 "
+                placeholder="Your Message"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 focus:ring-4 focus:ring-orange-300"
+            >
+              Send Message
+            </button>
+          </form>
+          {status && <p className="mt-4 text-center text-lg font-semibold text-white">{status}</p>}
+        </div>
       </div>
     </section>
   );
