@@ -22,11 +22,11 @@ export default function Projects() {
     {
       id: 1,
       image: image,
-      title: "MavericksCV",
+      title: "SnapNest(under development)",
       description:
-        "MavericksCV is a React-based single-page application tagged as the ultimate resume builder. It uses the Harvard letter format to create CVs and is designed to be user-friendly and efficient.",
-      liveLink: "https://mavericks-cv.netlify.app/",
-      githubLink: "https://github.com/mahesh-pagrut/Resume_Builder",
+        "SnapNest is a personalized media library like Google Photos, built with Next.js, Cloudinary, and Tanstack Query. It allows users to seamlessly upload, organize, and edit photos and videos with AI-powered enhancements, creative effects, and optimization features. Perfect for creators and developers looking for a smart media management solution.",
+      liveLink: "https://snap-nest-seven.vercel.app/",
+      githubLink: "https://github.com/mahesh-pagrut/snap-nest",
     },
     {
       id: 2,

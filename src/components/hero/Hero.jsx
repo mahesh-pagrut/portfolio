@@ -58,7 +58,7 @@ export default function Hero() {
             <img
               src={myNew1}
               alt="hero"
-              className="object-cover object-center rounded-full w-70 h-80 shadow-[0_0_40px_rgba(25,25,20,0.5)] "
+              className="object-cover object-center rounded-lg w-70 h-80 shadow-[0_0_40px_rgba(25,25,20,0.5)] "
             />
           </div>
         </div>
