@@ -22,11 +22,11 @@ export default function Projects() {
     {
       id: 1,
       image: image,
-      title: "SnapNest(under development)",
+      title: "Cyber-Web",
       description:
-        "SnapNest is a personalized media library like Google Photos, built with Next.js, Cloudinary, and Tanstack Query. It allows users to seamlessly upload, organize, and edit photos and videos with AI-powered enhancements, creative effects, and optimization features. Perfect for creators and developers looking for a smart media management solution.",
-      liveLink: "https://snap-nest-seven.vercel.app/",
-      githubLink: "https://github.com/mahesh-pagrut/snap-nest",
+        "Cyber-Web is a simple landing page featuring a portrait animation created from 300 images. The animation is triggered on scroll, bringing the visuals to life. It is built using HTML, CSS, and JavaScript, with GSAP (CDN), ScrollTrigger, and Locomotive Scroll for smooth animations and scrolling effects.",
+      liveLink: "https://anime-web-ashen.vercel.app/",
+      githubLink: "https://github.com/mahesh-pagrut/anime-web",
     },
     {
       id: 2,
@@ -49,10 +49,11 @@ export default function Projects() {
     {
       id: 4,
       image: image4,
-      title: "Project 4",
-      description: "Photo description for project",
-      liveLink: "https://mavericks-cv.netlify.app/",
-      githubLink: "https://github.com/example/project-4",
+      title: "SnapNest(under development)",
+      description:
+        "SnapNest is a personalized media library like Google Photos, built with Next.js, Cloudinary, and Tanstack Query. It allows users to seamlessly upload, organize, and edit photos and videos with AI-powered enhancements, creative effects, and optimization features. Perfect for creators and developers looking for a smart media management solution.",
+      liveLink: "https://snap-nest-seven.vercel.app/",
+      githubLink: "https://github.com/mahesh-pagrut/snap-nest",
     },
   ];
 
