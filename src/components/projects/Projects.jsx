@@ -5,12 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 import snapnest from "../../assets/slider1/snapnest.png";
-import recipesApp from "../../assets/slider1/recipes-app.png";
 import nutriPro1 from "../../assets/slider1/nutri-pro.png";
+import neoAi from "../../assets/slider1/neo-ai.png"
 
 import tuter from "../../assets/slider2/tuter.png";
 import cyberWeb from "../../assets/slider2/cyber-web.png";
-import nutriPro2 from "../../assets/slider2/nutri-pro.png";
+import recipesApp from "../../assets/slider2/recipes-app.png";
+
 
 
 export default function Projects() {
@@ -35,12 +36,12 @@ export default function Projects() {
     },
     {
       id: 2,
-      image: recipesApp,
-      title: "The Recipes App",
+      image: neoAi,
+      title: "Neo - AI Assistant",
       description:
-      "The Recipes App is a responsive web application built with Next.js, TypeScript, and Tailwind CSS. It features server-side rendering for optimized performance, a mobile-first design for seamless usability, dynamic routing for fast content loading, and detailed recipe pages for an enriched user experience.",
-      liveLink: "https://recipes-app-beige-alpha.vercel.app",
-      githubLink: "https://github.com/mahesh-pagrut/Recipes-App",
+      "Neo is an AI-powered virtual assistant designed to answer your queries, solve problems, and add a fun twist to your conversations. Built with HTML, CSS, React.js, and the powerful Gemini API, Neo not only provides smart responses but also comes with a good UI and comes with some savage replies to common questions/conversation starters !",
+      liveLink: "https://neo-ai-pi.vercel.app/",
+      githubLink: "https://github.com/mahesh-pagrut/neo-ai",
     },
     {
       id: 3,
@@ -74,12 +75,12 @@ export default function Projects() {
     },
     {
       id: 3,
-      image: nutriPro2,
-      title: "Upcoming",
+      image: recipesApp,
+      title: "The Recipes App",
       description:
-      "Upcoming",
-      liveLink: "https://pronutritions.netlify.app/",
-      githubLink: "https://github.com/mahesh-pagrut/6395-hackathon",
+      "The Recipes App is a responsive web application built with Next.js, TypeScript, and Tailwind CSS. It features server-side rendering for optimized performance, a mobile-first design for seamless usability, dynamic routing for fast content loading, and detailed recipe pages for an enriched user experience.",
+      liveLink: "https://recipes-app-beige-alpha.vercel.app",
+      githubLink: "https://github.com/mahesh-pagrut/Recipes-App",
     },
   ];
 
