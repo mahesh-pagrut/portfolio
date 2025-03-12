@@ -48,8 +48,8 @@ export default function Projects() {
       title: "CoinPulse",
       description:
         "CoinPulse is a sleek crypto tracking app built with React.js, Vite, and Context API for a fast and interactive experience. I integrated Google Charts to visualize real-time data from the CoinGecko API, ensuring accurate market trends. With react-icons for UI elements and a futuristic dark theme, the app allows users to track cryptocurrencies, switch between USD, EUR, and INR, and stay updated effortlessly.",
-      liveLink: "https://pronutritions.netlify.app/",
-      githubLink: "https://github.com/mahesh-pagrut/6395-hackathon",
+      liveLink: "https://stock-plan.vercel.app/",
+      githubLink:"https://github.com/mahesh-pagrut/CoinPulse"
     },
   ];
 
