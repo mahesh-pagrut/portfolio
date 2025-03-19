@@ -139,6 +139,8 @@ export default function Projects() {
   return (
     <section
       id="projects"
+      data-aos="fade-up"
+      data-aos-delay="400"
       className="relative overflow-hidden flex flex-col text-white body-font"
     >
       <div className="container px-5 py-24 mx-auto">
