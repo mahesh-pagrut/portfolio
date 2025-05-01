@@ -8,7 +8,7 @@ import snapnest from "../../assets/slider1/snapnest.png";
 import coinpulse from "../../assets/slider1/coin-pulse.png";
 import neoAi from "../../assets/slider1/neo-ai.png";
 
-import tuter from "../../assets/slider2/tuter.png";
+import foodvilla from "../../assets/slider2/food-villa.png";
 import cyberWeb from "../../assets/slider2/cyber-web.png";
 import nutriPro1 from "../../assets/slider1/nutri-pro.png";
 import recipesApp from "../../assets/slider2/recipes-app.png";
@@ -65,7 +65,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      image: tuter,
+      image: foodvilla,
       title: "E-Tuter (desktop only)",
       description:
         "E-Tuter is a sleek and modern landing page designed with a seamless UI and eye-catching colors. It features well-structured code and visually appealing components, ensuring a smooth user experience. This static web page is built exclusively for desktop users using React.js, Tailwind CSS, HTML, and simple icon libraries, providing a clean and responsive design.",
