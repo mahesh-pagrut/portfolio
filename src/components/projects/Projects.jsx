@@ -66,11 +66,11 @@ export default function Projects() {
     {
       id: 2,
       image: foodvilla,
-      title: "E-Tuter (desktop only)",
+      title: "FoodVilla - Food Delivery App",
       description:
-        "E-Tuter is a sleek and modern landing page designed with a seamless UI and eye-catching colors. It features well-structured code and visually appealing components, ensuring a smooth user experience. This static web page is built exclusively for desktop users using React.js, Tailwind CSS, HTML, and simple icon libraries, providing a clean and responsive design.",
-      liveLink: "https://tuter-landing-page--six.vercel.app/",
-      githubLink: "https://github.com/mahesh-pagrut/tuter-landing-page",
+        "FoodVilla is a dynamic and responsive food delivery web application built with React.js, Context API, Express.js, and MongoDB and Stripe. It enables users to browse a curated food menu, add items to cart, and make secure payments via Stripe Checkout. Admins can manage food items and orders through a separate dashboard.",
+      liveLink: "https://food-villa-eight-delta.vercel.app/",
+      githubLink: "https://github.com/mahesh-pagrut/food-villa",
     },
     {
       id: 3,
