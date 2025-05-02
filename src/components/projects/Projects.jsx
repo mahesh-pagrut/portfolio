@@ -12,6 +12,7 @@ import foodvilla from "../../assets/slider2/food-villa.png";
 import cyberWeb from "../../assets/slider2/cyber-web.png";
 import nutriPro1 from "../../assets/slider1/nutri-pro.png";
 import recipesApp from "../../assets/slider2/recipes-app.png";
+import rentIt from "../../assets/slider2/rent-it.png";
 
 export default function Projects() {
   const [showFullDescription, setShowFullDescription] = useState({});
@@ -49,13 +50,22 @@ export default function Projects() {
       description:
         "CoinPulse is a sleek crypto tracking app built with React.js, Vite, and Context API for a fast and interactive experience. I integrated Google Charts to visualize real-time data from the CoinGecko API, ensuring accurate market trends. With react-icons for UI elements and a futuristic dark theme, the app allows users to track cryptocurrencies, switch between USD, EUR, and INR, and stay updated effortlessly.",
       liveLink: "https://stock-plan.vercel.app/",
-      githubLink:"https://github.com/mahesh-pagrut/CoinPulse"
+      githubLink: "https://github.com/mahesh-pagrut/CoinPulse",
     },
   ];
 
   const listProjects2 = [
     {
       id: 1,
+      image: rentIt,
+      title: "RentIt – Real Estate Rental Platform",
+      description:
+        "RentIt is a modern, responsive real estate rental platform inspired by Airbnb. Built using React.js, Vite, and modern UI libraries, RentIt provides an elegant and interactive user experience for exploring, searching, and discovering rental properties. Whether you're looking for a cozy apartment or a luxurious villa, RentIt is your gateway to the perfect place.",
+      liveLink: "https://rent-it-vert.vercel.app/",
+      githubLink: "https://github.com/mahesh-pagrut/RentIt",
+    },
+    {
+      id: 2,
       image: nutriPro1,
       title: "NutriPro: 48 Hour Hackathon",
       description:
@@ -64,7 +74,7 @@ export default function Projects() {
       githubLink: "https://github.com/mahesh-pagrut/6395-hackathon",
     },
     {
-      id: 2,
+      id: 3,
       image: foodvilla,
       title: "FoodVilla - Food Delivery App",
       description:
@@ -73,7 +83,7 @@ export default function Projects() {
       githubLink: "https://github.com/mahesh-pagrut/food-villa",
     },
     {
-      id: 3,
+      id: 4,
       image: cyberWeb,
       title: "Cyber-Web",
       description:
@@ -82,7 +92,7 @@ export default function Projects() {
       githubLink: "https://github.com/mahesh-pagrut/anime-web",
     },
     {
-      id: 4,
+      id: 5,
       image: recipesApp,
       title: "The Recipes App",
       description:
