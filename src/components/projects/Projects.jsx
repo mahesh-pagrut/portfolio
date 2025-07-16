@@ -153,7 +153,7 @@ export default function Projects() {
       data-aos-delay="400"
       className="relative overflow-hidden flex flex-col text-white body-font"
     >
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-10 py-24 mx-auto">
         <h2 className="text-4xl font-bold text-center mb-2">My Projects</h2>
         <p className="text-lg text-center mb-12 text-gray-500">
           I have worked on a wide range of projects. Adding here some of my good

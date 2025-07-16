@@ -46,7 +46,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-8 lg:py-16 mx-auto max-w-screen-lg" data-aos="fade-up" data-aos-delay="400">
+    <section id="contact"  className="py-8 lg:py-16 px-4 md:px-8 mx-auto max-w-screen-lg" data-aos="fade-up" data-aos-delay="400">
       <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
       <div className="grid md:grid-cols-2 gap-8">
         {/* Contact Info Card */}
