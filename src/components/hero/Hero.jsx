@@ -1,7 +1,7 @@
 import React from "react";
 import hi from "../../assets/hi.png";
 import CV from "./Mahesh_Resume.pdf";
-import myNew1 from "../../assets/myNew1.png";
+import myNew3 from "../../assets/myNew3.jpg";
 
 export default function Hero() {
   const handleClick = () => {
@@ -56,9 +56,9 @@ export default function Hero() {
           </div>
           <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
             <img
-              src={myNew1}
+              src={myNew3}
               alt="hero"
-              className="object-cover object-center rounded-lg w-70 h-80 shadow-[0_0_40px_rgba(25,25,20,0.5)] "
+              className="object-cover object-center rounded-lg w-64 h-80 shadow-[0_0_40px_rgba(25,25,20,0.5)] "
             />
           </div>
         </div>
